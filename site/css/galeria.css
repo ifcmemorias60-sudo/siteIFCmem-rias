@@ -1,0 +1,138 @@
+/* Contêiner principal */
+.filtros {
+  background: #e2d7b9;
+  padding: 10px 18px;
+  border-radius: 25px;
+  width: fit-content;
+  margin: 10px 8%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: "Georgia", serif;
+}
+
+/* Texto “Filtrar:” */
+.filtros-label {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Área das tags */
+.tags-area {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Tag normal */
+.tag {
+  background: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-family: "Georgia", serif;
+}
+
+/* Tag selecionada */
+.tag.selected {
+  background: #306c3c;     /* verde IFC */
+  color: white;
+  position: relative;
+}
+
+/* “X” do Figma */
+.tag.selected::after {
+  content: "x";
+  margin-left: 6px;
+  font-weight: bold;
+}
+
+/* Container geral */
+.galeria {
+  padding: 40px 8%;
+  background: #EFE2BA; /* bege claro igual ao Figma */
+  font-family: "Georgia", serif;
+}
+
+/* Título de cada década */
+.decada-titulo {
+  font-size: 28px;
+  margin: 60px 0 18px;
+  color: #1f4e2b; /* verde do Figma */
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  position: relative;
+}
+
+/* Linha vertical estilo Figma */
+.decada-titulo::before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: #1f1f1f;
+  position: absolute;
+  left: -30px;
+  top: 0;
+}
+
+/* Bolinha na linha */
+.decada-titulo::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #000;
+  border-radius: 50%;
+  position: absolute;
+  left: -35px;
+  top: 5px;
+}
+
+/* Grade das imagens */
+.fotos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 26px;
+}
+
+/* Card da foto */
+.foto-card {
+  background: #ddd;
+  height: 260px;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Imagem */
+.foto-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Ano por cima da imagem */
+.foto-ano {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 0 1px 4px rgba(0,0,0,.5);
+}
+
+/* Descrição */
+.foto-desc {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  right: 12px;
+  font-size: 14px;
+  color: #fff;
+  text-shadow: 0 1px 4px rgba(0,0,0,.5);
+}
