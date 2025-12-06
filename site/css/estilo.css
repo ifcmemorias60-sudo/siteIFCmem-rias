@@ -166,7 +166,7 @@ p {
     opacity: 1;
 }
 
-.slide img {
+.slide img, .slide-pessoa img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -374,11 +374,13 @@ p {
 }
 
 .carrossel-pessoas {
-    position: relative;
-    height: 65vh;
-    margin: 0 auto; /* Centraliza o carrossel */
+    position:relative;
+    width: 100%;
+    max-width: 100vw;
     overflow: hidden;
-    max-width: 80vw;
+
+    /* impede estourar horizontalmente */
+    overflow-x: hidden;
 }
 
 /* Slides */
@@ -392,7 +394,7 @@ p {
     transition: opacity 0.5s ease-in-out; /* Transição de Fade */
 }
 
-.slide-pessoa.active-pessoa {
+.slide-pessoa.active {
     opacity: 1;
     z-index: 2; /* Garante que o slide ativo fique por cima */
 }
@@ -407,7 +409,7 @@ p {
 /* Texto sobreposto */
 .slide-texto-pessoa {
     position: absolute;
-    bottom: 20px;
+    /* bottom: 20px; */
     left: 50%;
     transform: translateX(-50%);
     color: white;
