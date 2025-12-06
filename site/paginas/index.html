@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/estilo.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montaga&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Página Inicial</title>
 </head>
 <body>
@@ -11,28 +14,30 @@
         <nav class="navbar">
             <ul class="nav-left">
             <li><a href="./linhadoTempo.html">História</a></li>
-            <li><a href="./entrevistas.html">Entrevistas</a></li>
+            <li><a href="./galeria.html">Galeria</a></li>
+            <li><a href="./pesquisa.html">Pesquisa</a></li>
             </ul>
 
             <div class="logo-wrap">
             <a href="index.html" class="logo-link">
-                <img src="img/logo-ifc.png" alt="IFC Concórdia" class="logo-img">
+                <img src="../imagens/logoprojeto.png" alt="IFC Concórdia" class="logo-img">
             </a>
             </div>
 
             <ul class="nav-right">
             <li><a href="./textosdeMemorias.html">Textos de memórias</a></li>
-            <li><a href="./galeria.html">Galeria</a></li>
+            <li><a href="./entrevistas.html">Entrevistas</a></li>
+
             </ul>
         </nav>
     </header>
 
-    <section class="carrossel">
+   <section class="carousel">
 
     <div class="carousel-track">
         <!-- Slide 1 -->
         <div class="slide active">
-            <img src="img/foto1.jpg" alt="Foto 1">
+            <img src="../imagens/depenandoGalinha1969 (1).jpg" alt="Foto 1">
             <div class="slide-texto">
                 <h1>O IFC Campus Concórdia</h1>
                 <p>O IFC Campus Concórdia tem uma longa história, iniciada em 1964, com a fundação do Colégio Agrícola...</p>
@@ -41,7 +46,7 @@
 
         <!-- Slide 2 -->
         <div class="slide">
-            <img src="img/foto2.jpg" alt="Foto 2">
+            <img src="../imagens/formaturaPrimeiraTurma (1).jpg" alt="Foto 2">
             <div class="slide-texto">
                 <h1>Uma trajetória de 60 anos</h1>
                 <p>O campus contribuiu de forma fundamental no desenvolvimento das famílias da região...</p>
@@ -50,7 +55,7 @@
 
         <!-- Slide 3 -->
         <div class="slide">
-            <img src="img/foto3.jpg" alt="Foto 3">
+            <img src="../imagens/EAgrotecnica.jpg" alt="Foto 3">
             <div class="slide-texto">
                 <h1>Tradição e Inovação</h1>
                 <p>O legado do campus se mantém vivo através das gerações...</p>
@@ -59,24 +64,25 @@
 
         <!-- Slide 4 -->
         <div class="slide">
-            <img src="img/foto3.jpg" alt="Foto 4">
-            <div class="slide-text">
+            <img src="../imagens/refeitório.jpg" alt="Foto 4">
+            <div class="slide-texto">
                 <h1>Tradição e Inovação</h1>
                 <p>O legado do campus se mantém vivo através das gerações...</p>
             </div>
         </div>
     </div>
 
-        <!-- Bolinhas de navegação -->
-        <div class="carousel-indicators">
-            <span class="indicator active" data-slide="0"></span>
-            <span class="indicator" data-slide="1"></span>
-            <span class="indicator" data-slide="2"></span>
-        </div>
+    <!-- Bolinhas de navegação -->
+    <div class="carousel-indicators">
+        <span class="indicator active" data-slide="0"></span>
+        <span class="indicator" data-slide="1"></span>
+        <span class="indicator" data-slide="2"></span>
+        <span class="indicator" data-slide="3"></span>
+    </div>
 
-        <!-- Setas -->
-        <button class="arrow left">&#10094;</button>
-        <button class="arrow right">&#10095;</button>
+    <!-- Setas -->
+    <button class="arrow left">&#10094;</button>
+    <button class="arrow right">&#10095;</button>
 
     </section>
 
@@ -94,78 +100,91 @@
 
         <div class="secao2estimativas">
             <div class="estimativa">
-                <p>00000</p>
+                <p class="numero">00000</p>
                 <p>Número de alunos formados</p>
             </div>
             <div class="estimativa">
-                <p>00000</p>
+                <p class="numero">00000</p>
                 <p>Número de alunos formados</p>
             </div>
             <div class="estimativa">
-                <p>00000</p>
+                <p class="numero">00000</p>
                 <p>Número de alunos formados</p>
             </div>
             <div class="estimativa">
-                <p>00000</p>
+                <p class="numero">00000</p>
                 <p>Número de alunos formados</p>
             </div>
         </div>
     </section>
 
     <section class="secLinhadoTempo">
-        <img src="" alt="imagensTempo">
         <h1 class="h1Vermelho">LINHA DO TEMPO</h1>
         <button class="botaoLinhadoTempo">Ver linha do tempo 🡢</button>
     </section>
 
     <section class="secDirecionamentos">
-        <div class="direcionamento">
+        <h1>Conheça nossa história:</h1>
+        <div class="direcionamentos">
+        <a href="./galeria.html" class="direcionamento">
             <img src="" alt="fotos">
             <h2>Acervo de fotos</h2>
             <p>Veja como nosso campus mudou com o tempo</p>
-        </div>
-        <div class="direcionamento">
+        </a>
+        <a href="./entrevistas.html" class="direcionamento">
             <img src="" alt="entrevistas">
             <h2>Entrevistas</h2>
             <p>com ex-servidores, alunos, enfim, com quem escreveu a história do campus</p>
-        </div>
-        <div class="direcionamento">
+        </a>
+        <a href="./textosdeMemorias.html" class="direcionamento">
             <img src="" alt="textos">
             <h2>Textos de memórias</h2>
             <p>Alunos atuais escrevendo sobre os alunos de antigamente</p>
-        </div>
-        <div class="direcionamento">
+        </a>
+        <a href="./pesquisa.html" class="direcionamento">
             <img src="" alt="pesquisa">
             <h2>Pesquisa</h2>
             <p>Resultados da pesquisa realizada durante o projeto</p>
-        </div>
+        </a> 
+    </div>
     </section>
 
     <section class="secPessoas">
-        <div class="carrossel-pessoas">
-        <div class="slide active-pessoa">
+    <h1>Pessoas que já passaram por aqui:</h1>
+    
+    <div class="carrossel-pessoas">
+        
+        <button class="arrow-pessoa left-pessoa">&#9664;</button>
+        <button class="arrow-pessoa right-pessoa">&#9654;</button>
+
+        <div class="slide-pessoa active-pessoa">
             <img src="img/foto1.jpg" alt="Foto 1">
             <div class="slide-texto-pessoa">
-                <p>Descrição pessoa</p>
+                <p>Nome da pessoa</p>
+                <p class="minibio">Mini biografia e/ou fala da pessoa</p>
             </div>
         </div>
 
-        <!-- Slide 2 -->
         <div class="slide-pessoa">
             <img src="img/foto2.jpg" alt="Foto 2">
             <div class="slide-texto-pessoa">
-                <p>Descrição pessoa</p>
+                <p>Nome da pessoa</p>
+                <p class="minibio">Mini biografia e/ou fala da pessoa</p>
             </div>
         </div>
 
-        <!-- Slide 3 -->
         <div class="slide-pessoa">
             <img src="img/foto3.jpg" alt="Foto 3">
             <div class="slide-texto-pessoa">
-                <p>Descrição pessoa</p>
+                <p>Nome da pessoa</p>
+                <p class="minibio">Mini biografia e/ou fala da pessoa</p>
             </div>
         </div>
+        
+    </div>
     </section>
-    
+<script src="../js/script.js" defer></script> 
+<script src="../js/carrosselPessoas.js" defer></script>   
 </body>
+
 </html>

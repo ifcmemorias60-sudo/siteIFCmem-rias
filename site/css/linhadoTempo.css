@@ -1,0 +1,95 @@
+/* --- ESTILIZAÇÃO GERAL --- */
+.secHistoria {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #f7f2e1; /* Cor de fundo creme da sua imagem */
+}
+
+.secHistoria h1 {
+    font-size: 38px;
+    margin-bottom: 50px;
+    color: #4b3d2b;
+}
+
+/* --- TRILHO CENTRAL (TIMELINE CONTAINER) --- */
+.timeline-container {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* A Linha Central Vertical (usando um pseudo-elemento) */
+.timeline-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%; /* Centraliza a linha */
+    width: 2px; /* Espessura da linha */
+    background-color: #4b3d2b; /* Cor da linha */
+    margin-left: -1px; /* Ajuste para centralização exata */
+}
+
+/* --- ITENS DA TIMELINE --- */
+.timeline-item {
+    display: flex; /* Usa Flexbox para colocar conteúdo e bolinha lado a lado */
+    position: relative;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+/* 🔑 Conteúdo (Texto/Imagem) */
+.timeline-content {
+    width: 45%; /* Ocupa metade do espaço para deixar um vão central */
+    padding: 10px 20px;
+    text-align: right; /* Padrão: texto à direita (lado esquerdo) */
+}
+
+/* 🔑 Bolinha (Marker) */
+.timeline-marker {
+    position: relative;
+    width: 10%; /* Pequeno espaço no centro */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinha a bolinha no topo do conteúdo */
+}
+
+/* O Círculo dentro da Bolinha */
+.timeline-marker::after {
+    content: '';
+    position: absolute;
+    top: 0; /* Alinha a bolinha no topo do item */
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #4b3d2b;
+    border: 3px solid #f7f2e1; /* Borda da cor do fundo para dar efeito de destaque */
+    z-index: 10;
+}
+
+/* Lado Esquerdo (Padrão) */
+.timeline-item.left-aligned {
+    flex-direction: row;
+}
+
+/*Lado Direito*/
+.timeline-item.right-aligned {
+    flex-direction: row-reverse;
+}
+
+.timeline-item.right-aligned .timeline-content {
+    text-align: left; 
+    margin-left: 5%; 
+}
+
+/* Imagens */
+.timeline-content img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+    display: block;
+    padding: 5px;
+    background: #e4dac5;
+}
