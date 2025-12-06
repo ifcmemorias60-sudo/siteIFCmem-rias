@@ -25,51 +25,48 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 50%; /* Centraliza a linha */
-    width: 2px; /* Espessura da linha */
-    background-color: #4b3d2b; /* Cor da linha */
-    margin-left: -1px; /* Ajuste para centralização exata */
+    left: 50%; 
+    width: 2px; 
+    background-color: #4b3d2b; /
+    margin-left: -1px; 
 }
 
 /* --- ITENS DA TIMELINE --- */
 .timeline-item {
-    display: flex; /* Usa Flexbox para colocar conteúdo e bolinha lado a lado */
+    display: flex; 
     position: relative;
     margin-bottom: 50px;
     width: 100%;
 }
 
-/* 🔑 Conteúdo (Texto/Imagem) */
 .timeline-content {
-    width: 45%; /* Ocupa metade do espaço para deixar um vão central */
+    width: 45%; 
     padding: 10px 20px;
-    text-align: right; /* Padrão: texto à direita (lado esquerdo) */
+    text-align: right; 
 }
 
-/* 🔑 Bolinha (Marker) */
 .timeline-marker {
     position: relative;
-    width: 10%; /* Pequeno espaço no centro */
+    width: 10%; 
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Alinha a bolinha no topo do conteúdo */
+    align-items: flex-start;
 }
 
-/* O Círculo dentro da Bolinha */
+
 .timeline-marker::after {
     content: '';
     position: absolute;
-    top: 0; /* Alinha a bolinha no topo do item */
+    top: 0; 
     width: 16px;
     height: 16px;
     border-radius: 50%;
     background-color: #4b3d2b;
-    border: 3px solid #f7f2e1; /* Borda da cor do fundo para dar efeito de destaque */
+    border: 3px solid #f7f2e1; 
     z-index: 10;
 }
 
-/* Lado Esquerdo (Padrão) */
 .timeline-item.left-aligned {
     flex-direction: row;
 }
